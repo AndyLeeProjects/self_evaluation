@@ -198,31 +198,6 @@ def monthly_eval(mon):
                 pass
     except:
         pass
-    '''
-    # Streaks
-        # if input month is not a current month, don't apply streak
-        # if the streak is 0, don't apply streak
-    try:
-        Cdate = mon['Date'][0][0:3].strip('/\"0')
-        today = datetime.today()
-        if int(Cdate) != today.month:
-            pass
-        else:
-            Rstreak = wakeupStreak()[0]
-            Tstreak = wakeupStreak()[1]
-            if Rstreak == 0:
-                pass
-            else:
-                axe[0].text(len(tt)-12.3,130,'Rise streak(9:30): %d'% Rstreak, color = 'green',fontweight = 'bold',
-                            fontsize = 13, alpha = .83)
-            if Tstreak == 0:
-                pass
-            else:
-                axe[0].text(len(tt)-5,130,'Total streak(70%%): %d'% Tstreak, color = 'magenta',fontweight = 'bold',
-                            fontsize = 13, alpha = .83)
-    except KeyError:
-        pass        
-    '''
 
     # Monthly Average
     monthavg = (np.sum(mon['Total'])/len(mon['Total']))*100

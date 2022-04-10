@@ -10,7 +10,10 @@ import datetime
 def changed_risetime():
     
     
-    changed_occurence = {'2021-02-01':32400, '2021-06-24':28800}
+    changed_occurence = {'2021-02-01':32400,
+                         '2021-06-24':28800, 
+                         '2021-12-23':32400,
+                         '2021-01-24':28800}
     
     
     return changed_occurence

@@ -21,7 +21,7 @@ import processMonth as pMon
 **********************************************************************
 '''
 mon = pRd.read_data()
-month = mon.monthly(4,22)
+month = mon.monthly(3,22)
 
 # Monthly Evaluation Plot
 pMon.monthly_eval(month)
